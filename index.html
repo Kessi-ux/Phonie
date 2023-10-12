@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phonie</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<script src="app.js"></script>  
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="holder">
+      <header>
+        <nav>
+          <a href="#" id="logo_txt">PHONIE</a>
+          <a href="#" id="try_link">Try it Free</a>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Check out the network a number uses in Nigeria</h1>
+        <div>
+          <div id="main_content">
+            <p style="margin-bottom: 30px">
+              Enter a phone number of your choice
+              <b style="font-family: trebuchet ms; color: hsl(192, 100%, 9%)"
+                >e.g. 08141258123 or +2348141258123</b
+              >
+            </p>
+            <div id="result">
+              <img src="" />
+              <p>
+                The number 09035310423: is on the
+                <strong id="network_indicator">MTN Network!!!</strong>
+              </p>
+            </div>
+            <div id="controller">
+              <input type="text" /><br />
+              <input type="button" value="get network" />
+            </div>
+          </div>
+          <div id="img_holder">
+            <img src="images/people.png" />
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p style="text-align: center; font-weight: 400">
+        &copy; Copyright 2023 Phonie. All righs reserved
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>
