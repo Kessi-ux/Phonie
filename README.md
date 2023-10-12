@@ -8,3 +8,14 @@ There wil be a validation: we will use the pattern attribute of the html form fi
 
 It will support +234 format country code and detect the carrier
 
+
+# Meet the team
+* [Uchenyi Kesandu](https://linkedin.com/in/uchekes)
+* [Promise Chikwendu](https://www.linkedin.com/in/promise-chikwendu-b73539196)
+Hauwa Ibrahim
+Jacob Chidimma Angel
+Omoloye Fauziyat Folashade
+Benson Iruobe
+Oluwole Ayomide
+Seyiodunlade
+Zinga
