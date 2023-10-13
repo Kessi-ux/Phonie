@@ -7,12 +7,12 @@
     margin: -1px;
     border: 0;
     padding: 0;
-  }
+  } 
 
   fieldset {
     border: 0;
-}
-   */
+  }
+  */
      .input-container {
        position: relative;
        display: inline-block;
@@ -21,76 +21,152 @@
      input[type="text"] {
        padding-right: 30px;
        /* Add space on the right for the icon */
-     }
+     } 
   
      .network-icon {
-       position: absolute;
+       /* position: absolute; */
        top: 50%;
        /* Adjust the position as needed */
-       right: 5px;
+       margin: 5px;
+      border: 2px solid #ccc;
        /* Adjust the position as needed */
-       transform: translateY(-50%);
+       /* transform: translateY(-50%); */
        /* Center vertically */
-       width: 20px;
-       height: 20px;
-       background-image: url('assets/mtn-logo.png');
+       width: 50px;
+       height: 50px;
+       /* background-image: url('assets/mtn-logo.png'); */
        /* Replace with your icon image */
-       background-size: cover;
+       /* background-size: cover; */
        cursor: pointer;
        /* Optional: Add pointer cursor for interactivity */
        display: none;
      }
   
      .network-icon_two {
-       position: absolute;
+       /* position: absolute; */
        top: 50%;
        /* Adjust the position as needed */
-       right: 5px;
+       margin: 5px;
+      border: 2px solid #ccc;
        /* Adjust the position as needed */
        transform: translateY(-50%);
        /* Center vertically */
-       width: 20px;
-       height: 20px;
-       background-image: url('assets/airtel-logo.png');
+       width: 50px;
+       height: 50px;
+       /* background-image: url('assets/airtel-logo.png'); */
        /* Replace with your icon image */
-       background-size: cover;
+       /* background-size: cover; */
        cursor: pointer;
        /* Optional: Add pointer cursor for interactivity */
        display: none;
      }
   
      .network-icon_three {
-       position: absolute;
+       /* position: absolute; */
        top: 50%;
        /* Adjust the position as needed */
-       right: 5px;
+       margin: 5px;
+      border: 2px solid #ccc;
        /* Adjust the position as needed */
        transform: translateY(-50%);
        /* Center vertically */
-       width: 20px;
-       height: 20px;
-       background-image: url('assets/glo-logo.png');
+       width: 50px;
+       height: 50px;
+       /* background-image: url('assets/glo-logo.png'); */
        /* Replace with your icon image */
-       background-size: cover;
+       /* background-size: cover; */
        cursor: pointer;
        /* Optional: Add pointer cursor for interactivity */
        display: none;
      }
   
      .network-icon_four {
-       position: absolute;
+       /* position: absolute; */
        top: 50%;
        /* Adjust the position as needed */
-       right: 5px;
+       margin: 5px;
+      border: 2px solid #ccc;
        /* Adjust the position as needed */
        transform: translateY(-50%);
        /* Center vertically */
-       width: 20px;
-       height: 20px;
-       background-image: url('assets/9mobile-logo.png');
+       width: 50px;
+       height: 50px;
+       /* background-image: url('assets/9mobile-logo.png'); */
        /* Replace with your icon image */
-       background-size: cover;
+       /* background-size: cover; */
        cursor: pointer;
        /* Optional: Add pointer cursor for interactivity */
        display: none;
      }
+     
+/* Recent edit*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar{
+  margin-bottom: 1em;
+}
+
+#header {
+  text-align: center;
+  /* margin-top: 10px; */
+}
+
+img {
+  width: 500px;
+  /* Adjust the width as needed */
+}
+
+
+/* .container {
+  width: 600px;
+  margin: auto;
+  padding: 15px;
+} */
+
+label {
+  font-weight: bold;
+}
+
+.phone-input-container {
+  /* width: 600px; */
+  /* display: flex;*/
+  align-items: center;
+  margin-top: 10px;
+  /* background-color: red; */
+  position: relative; 
+  display: inline-block;
+}
+
+.country-code {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  /* width: min-content; */
+}
+
+.phone-number {
+  flex: 1;
+  padding: 20px;
+  border-radius: 25px;
+  width: 100%;
+  margin-left: 10px;
+  /* Add margin for spacing */
+}
+
+input[type="submit"] {
+  /* background-color: #4285f4; */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  /* cursor: pointer; */
+  margin-top: 10px;
+}
+.cover{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top:20px;
+  padding: 30px;
+}

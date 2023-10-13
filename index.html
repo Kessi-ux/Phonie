@@ -5,26 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phonie</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/phonie.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   
 </head>
 <body>
-    <h3>Phonie</h3>
-    <form action="" method="POST">
-        <!-- <fieldset>
-            <div>
-                <label for="input-id" class="visually-hidden">Label</label>
-                <input id="input-id" type="tel" placeholder="Please input your phone number">
-                <input type="submit" value="ok">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid me">
+                <a class="navbar-brand" href="#">Phonie</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                       
+                    </ul>
+                </div> 
             </div>
-        </fieldset> -->
-        <div class="input-container">
-            <input type="text" id="phone" placeholder="Enter phone number">
-            <div id="networkIcon" class="network-icon"></div>
-            <div class="network-icon_two"></div>
-            <div class="network-icon_three"></div>
-            <div class="network-icon_four"></div>
+        </nav>
+        <!-- <div class="hero">
+            <nav>
+                <h1>PHONIE</h1>
+                <h2>CONTACT</h2>
+            </nav>
+        </div> -->
+    
+        
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-10 col-md-8 col-lg-6 cover">
+                <div id="header">
+                    <img src="assets/phonie.png" alt="">
+                </div>
+                <h2 class="enter">Enter Your Phone Number</h2>
+                <form class="form-example" action="" method="POST">
+                    <!-- <fieldset>
+                                            <div>
+                                                <label for="input-id" class="visually-hidden">Label</label>
+                                                <input id="input-id" type="tel" placeholder="Please input your phone number">
+                                                <input type="submit" value="ok">
+                                            </div>
+                                        </fieldset> -->
+                    <!-- <div class="phone-input-container">
+                        <div class="country-code">+234</div>
+                                        <input type="text" id="phone" class="phone-number" placeholder="Enter phone number"> -->
+                        <!-- <div id="networkIcon" class="network-icon"></div>
+                                        <div class="network-icon_two"></div>
+                                        <div class="network-icon_three"></div>
+                                        <div class="network-icon_four"></div> 
+                    </div> -->
+                    <div class="container-fluid phone-input-container">
+                
+                        <div class="row">
+                            <div class="col-md-2">
+                                <!-- <div class="country-code">+234</div> -->
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" id="phone" class="form-input phone-number" placeholder="Enter phone number">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="carriers">
+                                    <img src="assets/mtn-logo.png" class="network-icon" />
+                                    <img src="assets/airtel-logo.png" class="network-icon_two" />
+                                    <img src="assets/glo-logo.jpeg" class="network-icon_three" />
+                                    <img src="assets/9mobile-logo.jpeg" class="network-icon_four" />
+                                </div>
+                                <!-- <div id="networkIcon" class="network-icon"></div>
+                                                                            <div class="network-icon_two"></div>
+                                                                            <div class="network-icon_three"></div>
+                                                                            <div class="network-icon_four"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
         </div>
-    </form>
+       
+    
+    
+    </div>
     <img src="" alt="">
-<script src="app.js"></script>  
+    <script src="app.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous">
+    </script>
 </body>
 </html>
