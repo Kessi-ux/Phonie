@@ -100,15 +100,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
-}
+} */
 
 #header {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 img {
@@ -116,17 +116,18 @@ img {
   /* Adjust the width as needed */
 }
 
-.container {
+/* .container {
   width: 600px;
   margin: auto;
   padding: 15px;
-}
+} */
 
 label {
   font-weight: bold;
 }
 
 .phone-input-container {
+  width: 600px;
   display: flex;
   align-items: center;
   margin-top: 10px;
