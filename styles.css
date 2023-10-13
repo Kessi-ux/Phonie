@@ -1,4 +1,4 @@
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
@@ -12,4 +12,85 @@
   fieldset {
     border: 0;
 }
+   */
+     .input-container {
+       position: relative;
+       display: inline-block;
+     }
   
+     input[type="text"] {
+       padding-right: 30px;
+       /* Add space on the right for the icon */
+     }
+  
+     .network-icon {
+       position: absolute;
+       top: 50%;
+       /* Adjust the position as needed */
+       right: 5px;
+       /* Adjust the position as needed */
+       transform: translateY(-50%);
+       /* Center vertically */
+       width: 20px;
+       height: 20px;
+       background-image: url('assets/mtn-logo.png');
+       /* Replace with your icon image */
+       background-size: cover;
+       cursor: pointer;
+       /* Optional: Add pointer cursor for interactivity */
+       display: none;
+     }
+  
+     .network-icon_two {
+       position: absolute;
+       top: 50%;
+       /* Adjust the position as needed */
+       right: 5px;
+       /* Adjust the position as needed */
+       transform: translateY(-50%);
+       /* Center vertically */
+       width: 20px;
+       height: 20px;
+       background-image: url('assets/airtel-logo.png');
+       /* Replace with your icon image */
+       background-size: cover;
+       cursor: pointer;
+       /* Optional: Add pointer cursor for interactivity */
+       display: none;
+     }
+  
+     .network-icon_three {
+       position: absolute;
+       top: 50%;
+       /* Adjust the position as needed */
+       right: 5px;
+       /* Adjust the position as needed */
+       transform: translateY(-50%);
+       /* Center vertically */
+       width: 20px;
+       height: 20px;
+       background-image: url('assets/glo-logo.png');
+       /* Replace with your icon image */
+       background-size: cover;
+       cursor: pointer;
+       /* Optional: Add pointer cursor for interactivity */
+       display: none;
+     }
+  
+     .network-icon_four {
+       position: absolute;
+       top: 50%;
+       /* Adjust the position as needed */
+       right: 5px;
+       /* Adjust the position as needed */
+       transform: translateY(-50%);
+       /* Center vertically */
+       width: 20px;
+       height: 20px;
+       background-image: url('assets/9mobile-logo.png');
+       /* Replace with your icon image */
+       background-size: cover;
+       cursor: pointer;
+       /* Optional: Add pointer cursor for interactivity */
+       display: none;
+     }
