@@ -18,10 +18,10 @@
        display: inline-block;
      }
   
-     input[type="text"] {
+     /* input[type="text"] {
        padding-right: 30px;
-       /* Add space on the right for the icon */
-     }
+       /* Add space on the right for the icon 
+     } */
   
      .network-icon {
        position: absolute;
@@ -94,3 +94,64 @@
        /* Optional: Add pointer cursor for interactivity */
        display: none;
      }
+     
+/* Recent edit*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+#header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+img {
+  width: 500px;
+  /* Adjust the width as needed */
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  padding: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.phone-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.country-code {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.phone-number {
+  flex: 1;
+  padding: 20px;
+  border-radius: 25px;
+
+  margin-left: 10px;
+  /* Add margin for spacing */
+}
+
+input[type="submit"] {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
