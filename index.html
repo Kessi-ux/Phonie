@@ -13,46 +13,90 @@
 </head>
 
 <body>
-  <div id="holder">
-    <header>
-      <nav>
-        <a href="#" id="logo_txt">PHONIE</a>
-        <a href="#" id="try_link">Try it Free</a>
-      </nav>
-    </header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid me">
+        <a class="navbar-brand" href="#">Phonie</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
 
-    <main>
-      <h1>Check out the network a number uses in Nigeria</h1>
-      <div>
-        <div id="main_content">
-          <p style="margin-bottom: 30px">
-            Enter a phone number of your choice
-            <b style="font-family: trebuchet ms; color: hsl(192, 100%, 9%)">e.g. 08141258123 or +2348141258123</b>
-          </p>
-          <div id="result">
-            <img src="" />
-            <p>
-              The number 09035310423: is on the
-              <strong id="network_indicator">MTN Network!!!</strong>
-            </p>
-          </div>
-          <div id="controller">
-            <input type="text" /><br />
-            <input type="button" value="get network" />
-          </div>
-        </div>
-        <div id="img_holder">
-          <img src="images/people.png" />
+          </ul>
         </div>
       </div>
-    </main>
+    </nav>
+    <!-- <div class="hero">
+            <nav>
+                <h1>PHONIE</h1>
+                <h2>CONTACT</h2>
+            </nav>
+        </div> -->
+
+
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-10 col-md-8 col-lg-6 cover">
+        <div id="header">
+          <img src="assets/phonie.png" alt="">
+        </div>
+        <h2 class="enter">Enter Your Phone Number</h2>
+        <form class="form-example" action="" method="POST">
+          <!-- <fieldset>
+                                            <div>
+                                                <label for="input-id" class="visually-hidden">Label</label>
+                                                <input id="input-id" type="tel" placeholder="Please input your phone number">
+                                                <input type="submit" value="ok">
+                                            </div>
+                                        </fieldset> -->
+          <!-- <div class="phone-input-container">
+                        <div class="country-code">+234</div>
+                                        <input type="text" id="phone" class="phone-number" placeholder="Enter phone number"> -->
+          <!-- <div id="networkIcon" class="network-icon"></div>
+                                        <div class="network-icon_two"></div>
+                                        <div class="network-icon_three"></div>
+                                        <div class="network-icon_four"></div> 
+                    </div> -->
+          <div class="container-fluid phone-input-container">
+
+            <div class="row">
+              <div class="col-md-2">
+                <!-- <div class="country-code">+234</div> -->
+              </div>
+              <div class="col-md-8">
+                <input type="text" id="phone" class="form-input phone-number" placeholder="Enter phone number">
+              </div>
+              <div class="col-md-2">
+                <div class="carriers">
+                  <img src="assets/mtn-logo.png" class="network-icon" />
+                  <img src="assets/airtel-logo.png" class="network-icon_two" />
+                  <img src="assets/glo-logo.jpeg" class="network-icon_three" />
+                  <img src="assets/9mobile-logo.jpeg" class="network-icon_four" />
+                </div>
+                <!-- <div id="networkIcon" class="network-icon"></div>
+                                                                            <div class="network-icon_two"></div>
+                                                                            <div class="network-icon_three"></div>
+                                                                            <div class="network-icon_four"></div> -->
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+
+
   </div>
-  <footer>
-    <p style="text-align: center; font-weight: 400">
-      &copy; Copyright 2023 Phonie. All righs reserved
-    </p>
-  </footer>
+  <img src="" alt="">
   <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
