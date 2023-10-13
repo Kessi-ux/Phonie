@@ -38,6 +38,7 @@ const networkProviders = {
 	'0909': '9mobile',
 	'0809': '9mobile'
 	// Add more prefixes as needed
+	// Added the prefix
 };
 
 phoneInput.addEventListener('input', updateNetworkIcon);
