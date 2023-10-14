@@ -1,45 +1,78 @@
-/* .visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  } 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 
-  fieldset {
-    border: 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html{
+    position: relative;
+    max-height: 100vh; 
+} */
+  body{
+    font-family: Arial, sans-serif;
+    overflow: hidden;
   }
-  */
+  .nav{
+    background: hsla(192, 100%, 9%, 0.913);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 10%; */
+  }
+.img-nav{
+  width: 120px;
+  height: auto;
+}
+.nav-links{
+  list-style-type: none;
+  display: flex;
+}
+.nav-links li {
+    margin-right: 20px; 
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover{
+    color: #2D63EA;
+}
+
+.nav-collapse {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 5px;
+}
      .input-container {
        position: relative;
        display: inline-block;
      }
   
-     input[type="text"] {
+     /* input[type="text"] {
        padding-right: 30px;
-       /* Add space on the right for the icon */
-     } 
+      
+     }  */
   
      .network-icon {
-       /* position: absolute; */
        top: 50%;
-       /* Adjust the position as needed */
        margin: 5px;
       border: 2px solid #ccc;
-       /* Adjust the position as needed */
-       /* transform: translateY(-50%); */
-       /* Center vertically */
        width: 50px;
        height: 50px;
-       /* background-image: url('assets/mtn-logo.png'); */
-       /* Replace with your icon image */
-       /* background-size: cover; */
        cursor: pointer;
-       /* Optional: Add pointer cursor for interactivity */
        display: none;
+       border-radius: 3px;
      }
   
      .network-icon_two {
@@ -100,45 +133,119 @@
      }
      
 /* Recent edit*/
-body {
-  font-family: Arial, sans-serif;
-}
-
-.navbar{
-  margin-bottom: 1em;
-}
 
 #header {
   text-align: center;
   /* margin-top: 10px; */
 }
 
-img {
-  width: 500px;
-  /* Adjust the width as needed */
-}
-
-
-/* .container {
-  width: 600px;
-  margin: auto;
-  padding: 15px;
-} */
 
 label {
   font-weight: bold;
 }
-
-.phone-input-container {
-  /* width: 600px; */
-  /* display: flex;*/
+.verify{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 300;
+  margin-bottom: 15px;
+  color:  hsla(192, 100%, 9%, 0.913);
+  letter-spacing: 2px; 
+}
+/* .phone-input-container {
   align-items: center;
   margin-top: 10px;
-  /* background-color: red; */
   position: relative; 
   display: inline-block;
+} */
+.input-wrapper {
+    position: relative;
+}
+     #inputField {
+    padding: 10px;
+    width: 80%; /* Adjust the width to your preference */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+/* Style the attachment icon */
+.attachment-icon {
+    position: absolute;
+    right: 12%;
+    top: 51%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.attachment-icon-airtel {
+    position: absolute;
+    right: 12%;
+    top: 51%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.attachment-icon-glo {
+    position: absolute;
+    right: 12%;
+    top: 51%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.attachment-icon-ninemobile {
+    position: absolute;
+    right: 12%;
+    top: 51%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.phone-input-container{
+  display: flex; /* Make the input and image inline */
+    align-items: center; 
+}
+.btn-validate{
+  background-color: hsla(192, 100%, 9%, 0.913);
+  color: white;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+}
+.btn-validate:hover{
+  color: hsla(192, 100%, 9%, 0.913);
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  border: 2px  solid hsla(192, 100%, 9%, 0.913);
+}
+#phone{
+  padding: 10px;
+    width: 80%; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.carriers{
+  margin-left: 10px;
+    cursor: pointer; 
+}
 .country-code {
   padding: 20px;
   border: 1px solid #ccc;
@@ -164,9 +271,72 @@ input[type="submit"] {
   /* cursor: pointer; */
   margin-top: 10px;
 }
-.cover{
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-top:20px;
-  padding: 30px;
+
+
+footer{
+     height: 10%;
+   position: absolute;
+    width: 100%;
+    background: hsla(192, 100%, 9%, 0.913);
+    color: white;
+    font-weight: 400;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    /* z-index: 10; */
+}
+.main{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+}
+.hero-image{
+    flex: 1; 
+    background-image: url('images/people.png');
+    /* background-size: cover; */
+    background-position: center;
+    height: 100%;
+    background-color: hsl(192, 100%, 9%);
+}
+.form-check{
+    flex: 1; 
+    background-color: #f7f7f7; 
+    padding: 20px;
+    text-align: center;
+}
+.people{
+  height: 60%;
+  width:60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        /* margin-top: 6px; */
+    }
+    .img-nav{
+      height: 100px;
+    }
+    .nav-links li {
+      margin-top: 3px;
+      transition: opacity 0.7s;
+    }
+
+    .nav-collapse {
+        display: block; 
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    footer{
+    height: 10%;
+    }
 }
