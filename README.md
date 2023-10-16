@@ -15,8 +15,7 @@ It will support +234 format country code and detect the carrier
 - [Omoloye Fauziyat Folashade](https://www.linkedin.com/in/fauziyat-folashade-omoloye)
 - [Benson Iruobe](https://www.linkedin.com/in/benson-iruobe)
 - [Oluwole Ayomide](https://www.linkedin.com/in/ayomide-oluwole)
-
-Hauwa Ibrahim
-Jacob Chidimma Angel
-Seyiodunlade
-Zinga
+- [Odunlade Oluwaseyi](https://www.linkedin.com/in/odunlade-oluwaseyi-784a66191)
+- Hauwa Ibrahim
+- Jacob Chidimma Angel
+- Zinga
