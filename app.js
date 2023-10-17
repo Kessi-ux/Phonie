@@ -74,9 +74,48 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* validate the input field */
+// function validateInput() {
+//     maxLength = 14;
+//     minLength = 11;
+//     //let value = document.getElementById("inputField").value;
+//     var inputField = document.forms["myForm"]["inputField"].value;
+
+//     if(inputField.length > maxLength && inputField.length < minLength) {
+//         document.getElementById("inputField").style.borderColor="red";
+//         return true;
+//     }
+// }
+
+
+//at first, we define a variable stating that an event listener has been attached onto the field
+   //let phone = document.getElementById('inputField');
+
+   //phone.addEventListener('input', validatePhone);
+  //  function validatePhone(){
+  //    if(inputField.value.length < 11){
+  //       inputField.style.color = 'red';
+  //    }
+  //    else{
+  //       phone.style.color = 'green';
+  //    }
+  //  }
+
+
 inputField.addEventListener("input", function () {
   const phoneNumber = inputField.value;
   const prefix = phoneNumber.substring(0, 4);
+
+  // Validate the input field
+  if(inputField.value.length < 11 || inputField.value.length > 14){
+        inputField.style.color = 'red';
+        inputField.style.borderColor = 'red';
+       // document.getElementById("inputField").style.borderColor = "red";
+     }
+  else{
+        inputField.style.color = 'green';
+     }
+
   if (networkProviders[prefix] === "MTN" && inputField.value.trim() !== "") {
     attachmentIcon.style.opacity = 1;
   } else if (

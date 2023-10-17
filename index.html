@@ -35,13 +35,13 @@
     <section class="form-check">
       <h2 class="verify">Verify your number!</h2>
       <div class="input-wrapper">
-        <input type="text" id="inputField" placeholder="Enter Phone Number" />
+        <input type="text" id="inputField" placeholder="Enter Phone Number" class="error" required onkeyup="validateInput()"/>
         <img src="assets/mtn-logo.png" alt="Mtn-Attachment" class="attachment-icon" id="attachmentIcon" />
         <img src="assets/airtel-logo.png" alt="Airtel-Attachment" class="attachment-icon-airtel" />
         <img src="assets/glo-logo.jpeg" alt="Glo-Attachment" class="attachment-icon-glo" />
         <img src="assets/9mobile-logo.jpeg" alt="9mobile-Attachment" class="attachment-icon-ninemobile" />
       </div>
-      <button class="btn-validate">Validate Number</button>
+      <button class="btn-validate">Validate Number</button> 
       <!-- <form action="" method="POST">
           <div class=" phone-input-container">
             <div class="">
@@ -53,6 +53,15 @@
               <img src="assets/glo-logo.jpeg" class="network-icon_three" />
               <img src="assets/9mobile-logo.jpeg" class="network-icon_four" />
             </div>
+          </div>
+        </form> -->
+        <!-- <form name="myForm" class="myForm" id="myForm">
+            <div class="input-wrapper">
+              <input type="text" id="inputField" placeholder="Enter Phone Number" name="inputField" class="error" required/>
+              <img src="assets/mtn-logo.png" alt="Mtn-Attachment" class="attachment-icon" id="attachmentIcon" />
+              <img src="assets/airtel-logo.png" alt="Airtel-Attachment" class="attachment-icon-airtel" />
+              <img src="assets/glo-logo.jpeg" alt="Glo-Attachment" class="attachment-icon-glo" />
+              <img src="assets/9mobile-logo.jpeg" alt="9mobile-Attachment" class="attachment-icon-ninemobile" />
           </div>
         </form> -->
     </section>

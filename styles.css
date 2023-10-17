@@ -340,3 +340,8 @@ footer{
     height: 10%;
     }
 }
+
+/* validation */
+.error {
+  border: 1px solid red;
+}
