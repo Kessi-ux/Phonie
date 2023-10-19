@@ -19,3 +19,5 @@ It will support +234 format country code and detect the carrier
 - [Jacob Chidimma Angel](https://www.linkedin.com/in/jacob-chidimma-angel-49a92a22a)
 - [Zinga Etibwa](https://www.linkedin.com/in/zinga-etibwa-8b304b264)
 - Hauwa Ibrahim
+
+This is the link to the [Phonie live demo app](https://kessi-ux.github.io/Phonie)
