@@ -242,10 +242,7 @@ label {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.carriers{
-  margin-left: 10px;
-    cursor: pointer; 
-}
+
 .country-code {
   padding: 20px;
   border: 1px solid #ccc;
@@ -339,9 +336,4 @@ footer{
     footer{
     height: 10%;
     }
-}
-
-/* validation */
-.error {
-  border: 1px solid red;
 }
