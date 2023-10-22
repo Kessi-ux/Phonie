@@ -1,4 +1,4 @@
-const phoneInput = document.getElementById("phone");
+// const phoneInput = document.getElementById("phone");
 const networkIcon = document.querySelector(".network-icon");
 const airtelNetwork = document.querySelector(".attachment-icon-airtel");
 const gloNetwork = document.querySelector(".attachment-icon-glo");
@@ -7,6 +7,7 @@ const inputField = document.getElementById("inputField");
 const attachmentIcon = document.getElementById("attachmentIcon");
 const pattern = /^\d+$/;
 const getNetworkBtn = document.querySelector(".btn-validate");
+const error = document.querySelector("#error");
 
 // Map of phone number prefixes to network provider names
 const networkProviders = {
@@ -46,6 +47,16 @@ const networkProviders = {
   // Added the prefix
 };
 
+const changeInputBorder = (status) => {
+  if (status === true) {
+    inputField.style.border = "2px solid rgb(0,255,0)";
+  } else if (status === "original") {
+    inputField.style.border = "2px solid hsla(192, 100%, 9%, 0.913)";
+  } else {
+    inputField.style.border = "2px solid 8B0023";
+  }
+};
+
 // phoneInput.addEventListener("input", updateNetworkIcon);
 
 // function updateNetworkIcon() {
@@ -77,32 +88,38 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-let clearNetworkIcons = (clearIconsOnly) => {
+let clearNetworkIcons = () => {
   attachmentIcon.style.opacity = 0;
   airtelNetwork.style.opacity = 0;
   gloNetwork.style.opacity = 0;
   nineMobileNetwork.style.opacity = 0;
-  if (clearIconsOnly == false) {
-    inputField.value = "";
-  }
 };
 
-let updateNetworkIcon = (userInput) => {
-  const prefix = userInput.substring(0, 4);
+let updateNetworkIcon = (userInput, with234) => {
+  const prefix =
+    with234 === true
+      ? "0" + userInput.substring(4, 7)
+      : userInput.substring(0, 4);
+  console.log("PREFIX: ", prefix);
   if (networkProviders[prefix] === "MTN") {
     attachmentIcon.style.opacity = 1;
     error.innerHTML = "";
+    changeInputBorder(true);
   } else if (networkProviders[prefix] === "Airtel") {
     airtelNetwork.style.opacity = 1;
     error.innerHTML = "";
+    changeInputBorder(true);
   } else if (networkProviders[prefix] === "Glo") {
     gloNetwork.style.opacity = 1;
     error.innerHTML = "";
+    changeInputBorder(true);
   } else if (networkProviders[prefix] === "9mobile") {
     nineMobileNetwork.style.opacity = 1;
     error.innerHTML = "";
+    changeInputBorder(true);
   } else {
-    clearNetworkIcons(false);
+    clearNetworkIcons();
+    changeInputBorder(false);
     error.innerHTML =
       "Try another number as we don't know the network of the number";
   }
@@ -140,41 +157,78 @@ getNetworkBtn.addEventListener("click", () => {
 });
 
 inputField.addEventListener("input", function () {
-  // clearNetworkIcons(true);
-  // error.innerHTML = "";
-
-  let userInput = document.getElementById("inputField").value.trim();
-  let error = document.querySelector("#error");
-
+  error.innerHTML = "";
+  let userInput = inputField.value.trim();
   let pattern = /^\d+$/;
-  try {
-    // if (userInput.length == 0) {
-    //   throw "You need to enter a number";
-    // }
-    if (userInput.slice(0, 4) === "+234") {
-      userInput = "0" + userInput.slice(4);
-      // console.log("USERINPUT CHANGED", userInput);
-    }
-    if (userInput.length < 11) {
-      throw "Number must not be less than 11 digits";
-    }
-    if (userInput.length > 11) {
-      throw "Number must not be greater than 11 digits";
-    }
-    if (!pattern.test(userInput)) {
-      throw "Number contains unwanted characters";
-    }
 
-    updateNetworkIcon(userInput);
+  try {
+    if (userInput.length === 0) {
+      error.innerHTML = "";
+      changeInputBorder("original");
+      clearNetworkIcons();
+    } else {
+      if (!pattern.test(userInput) && userInput.slice(0, 4) !== "+234") {
+        changeInputBorder(false);
+        throw "Number contains unwanted characters";
+      }
+      if (userInput.length >= 4 && userInput.slice(0, 4) !== "+234") {
+        updateNetworkIcon(userInput, false);
+      } else if (userInput.length >= 7 && userInput.slice(0, 4) === "+234") {
+        updateNetworkIcon(userInput, true);
+      } else {
+        clearNetworkIcons();
+        changeInputBorder("original");
+        error.innerHTML = "";
+      }
+    }
   } catch (err) {
     error.innerHTML = err;
-  } finally {
-    inputField.value = "";
   }
 });
 
+// inputField.addEventListener("input", function () {
+//   error.innerHTML = "";
+//   let userInput = document.getElementById("inputField").value.trim();
+//   let pattern = /^\d+$/;
+//   try{
 
-});
+//     if (!pattern.test(userInput)) {
+//       changeInputBorder(false);
+//       throw "Number contains unwanted characters";
+//       //   }
+
+//   }catch (err) {
+//       error.innerHTML = err;
+//     }
+// clearNetworkIcons(true);
+// error.innerHTML = "";
+//
+// let error = document.querySelector("#error");
+// let pattern = /^\d+$/;
+// try {
+//   // if (userInput.length == 0) {
+//   //   throw "You need to enter a number";
+//   // }
+//   if (userInput.slice(0, 4) === "+234") {
+//     userInput = "0" + userInput.slice(4);
+//     // console.log("USERINPUT CHANGED", userInput);
+//   }
+//   if (userInput.length < 11) {
+//     throw "Number must not be less than 11 digits";
+//   }
+//   if (userInput.length > 11) {
+//     throw "Number must not be greater than 11 digits";
+//   }
+//   if (!pattern.test(userInput)) {
+//     throw "Number contains unwanted characters";
+//   }
+//   updateNetworkIcon(userInput);
+// } catch (err) {
+//   error.innerHTML = err;
+// } finally {
+//   inputField.value = "";
+// }
+// });
 
 // inputField.addEventListener("input", function () {
 //   const phoneNumber = inputField.value;
