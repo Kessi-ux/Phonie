@@ -140,8 +140,40 @@ getNetworkBtn.addEventListener("click", () => {
 });
 
 inputField.addEventListener("input", function () {
-  clearNetworkIcons(true);
-  error.innerHTML = "";
+  // clearNetworkIcons(true);
+  // error.innerHTML = "";
+
+  let userInput = document.getElementById("inputField").value.trim();
+  let error = document.querySelector("#error");
+
+  let pattern = /^\d+$/;
+  try {
+    // if (userInput.length == 0) {
+    //   throw "You need to enter a number";
+    // }
+    if (userInput.slice(0, 4) === "+234") {
+      userInput = "0" + userInput.slice(4);
+      // console.log("USERINPUT CHANGED", userInput);
+    }
+    if (userInput.length < 11) {
+      throw "Number must not be less than 11 digits";
+    }
+    if (userInput.length > 11) {
+      throw "Number must not be greater than 11 digits";
+    }
+    if (!pattern.test(userInput)) {
+      throw "Number contains unwanted characters";
+    }
+
+    updateNetworkIcon(userInput);
+  } catch (err) {
+    error.innerHTML = err;
+  } finally {
+    inputField.value = "";
+  }
+});
+
+
 });
 
 // inputField.addEventListener("input", function () {
