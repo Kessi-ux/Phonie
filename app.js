@@ -21,6 +21,9 @@ const networkProviders = {
   "0706": "MTN",
   "0903": "MTN",
   "0906": "MTN",
+  "0913": "MTN",
+  "0916": "MTN",
+  "0704": "MTN",
   "0805": "Glo",
   "0905": "Glo",
   "0811": "Glo",
@@ -29,6 +32,8 @@ const networkProviders = {
   "0807": "Glo",
   "0915": "Glo",
   "0701": "Airtel",
+  "0904": "Airtel",
+  "0912": "Airtel",
   "0802": "Airtel",
   "0808": "Airtel",
   "0708": "Airtel",
@@ -121,7 +126,7 @@ let updateNetworkIcon = (userInput, with234) => {
     clearNetworkIcons();
     changeInputBorder(false);
     error.innerHTML =
-      "Try another number as we don't know the network of the number";
+      "Invalid Network Provider Number, TRY ANOTHER NUMBER.";
   }
 };
 
