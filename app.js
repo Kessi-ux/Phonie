@@ -126,7 +126,7 @@ let updateNetworkIcon = (userInput, with234) => {
     clearNetworkIcons();
     changeInputBorder(false);
     error.innerHTML =
-      "Try another number as we don't know the network of the number";
+      "Invalid Network Provider Number, TRY ANOTHER NUMBER.";
   }
 };
 
