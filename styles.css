@@ -159,12 +159,19 @@ label {
 .input-wrapper {
     position: relative;
 }
-     #inputField {
+
+#inputField {
     padding: 10px;
     width: 80%; /* Adjust the width to your preference */
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
+
+#inputField:focus{
+  border-color: hsla(192, 100%, 9%, 0.913);
+}
+
 
 /* Style the attachment icon */
 .attachment-icon {
@@ -226,8 +233,8 @@ label {
   padding: 10px;
   font-size: 18px;
   border-radius: 10px;
-  border: none;
   margin-top: 15px;
+  display: none;
 }
 .btn-validate:hover{
   color: hsla(192, 100%, 9%, 0.913);
