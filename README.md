@@ -18,6 +18,6 @@ It will support +234 format country code and detect the carrier
 - [Odunlade Oluwaseyi](https://www.linkedin.com/in/odunlade-oluwaseyi-784a66191)
 - [Jacob Chidimma Angel](https://www.linkedin.com/in/jacob-chidimma-angel-49a92a22a)
 - [Zinga Etibwa](https://www.linkedin.com/in/zinga-etibwa-8b304b264)
-- Hauwa Ibrahim
+- [Hauwa Ibrahim](https://www.linkedin.com/in/hauwa-Ibrahim)
 
 This is the link to the [Phonie live demo app](https://kessi-ux.github.io/Phonie)
